@@ -18,3 +18,27 @@ The parser is written for the grammar shown in Fig: 5.15, using the coding schem
 ![Token coding scheme](https://github.com/Sai-Nandan-Desetti/Recursive-Descent-Parser/assets/80631906/4c5b26ca-9014-4044-9828-164bde683ede)
 
 (Pictures are taken from the aforementioned book.)
+
+### Details
+* The parser is written only for the following rules: 6a, 9, 10a, 11a, 12, and 13.
+* Thus, the input statement should only be based on these rules.
+* The input should be in all CAPS.
+* Do not add a semi-colon at the end.
+
+### Example
+```
+Enter a statement: SUM := A + B
+
+READ:   false
+
+IDLIST: false
+
+ASSIGN: true
+
+EXP:    false
+
+TERM:   false
+
+FACTOR: false
+```
+The program returns `true` for `ASSIGN` because we've input an assignment.
